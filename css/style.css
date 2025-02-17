@@ -1,0 +1,434 @@
+:root{
+    --black: black;
+    --background: #e3e3e3;
+    --title-color: rgb(96, 191, 0);
+    --white: white;
+    --green: green;
+    --nav-back:#008f30;
+    --boton:#a0ffc0;
+    --white-gray:rgb(248, 248, 248) ;
+    --toggle: #008f30;
+    --valores-metas:rgb(187, 255, 42);
+    --color-input:#ccc;
+    --aside-background:rgb(228, 255, 221);
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    line-height: 1.6;
+    background-color:  var(--background);
+    justify-content: center;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: var(--white);
+    padding: 10px 0 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right,var(--black),var(--white));
+    z-index: 1;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+.logo-titulo__img{
+    animation: giros 4s infinite ease;
+}
+.logo-titulo__titulo{
+    color: var(--title-color);
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.toggle{
+    display: none;
+    margin-right: 20px;
+    color: var(--toggle);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav{
+    margin-right: 40px;
+}
+.nav__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav__item{
+    padding: 5px 15px;
+    background-color: var(--nav-back);
+    transition: background-color 1s ease;
+    &:hover{
+        background-color: var(--background);
+        border-radius: 3px;
+    }
+}
+.nav__link{
+    color: var(--white);
+    text-decoration: none;
+    transition: color 1s ease;
+    &:hover{
+        color: var(--green);
+        text-shadow:0px 0px 1px black;
+    }
+}
+
+.main{
+    padding-top: 100px;
+    height: auto;
+}
+
+.section-video{
+    background-color: var(--background);
+}
+#centrado{
+    display: flex;
+    justify-content: center;
+}
+.section-video__frame {
+    width: 1110px;
+    overflow: hidden;
+    display: block;
+    border-radius: 12px;
+    border: solid 1px;
+}
+.section-video__video{
+    display: block;
+    margin-top: -200px;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.section-resumen{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+.section-resumen__resumen{
+    width: 28%;
+    justify-items: left;
+}
+
+.cifras__titulo{
+    background-color: var(--title-color);
+    border-radius: 3px;
+    padding: 1px 20px 1px 20px;
+}
+.cifras__monto-titulo{
+    padding: 0;
+    margin: 0;
+}
+.cifras__monto-valor{
+    padding: 0;
+    margin: 0;
+    color: var(--valores-metas);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid var(--white);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.porcentaje-meta{
+    padding: 0;
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+.porcentaje-meta__titulo{
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+.porcentaje-meta__porcentaje{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.porcentaje-meta__monto-tit{
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+.porcentaje-meta__monto-valor{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.calendario-inversionistas{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 50%;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    margin: 5px 0 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#dias, #inversionistas{
+    font-size: 3em;
+    color: var(--valores-metas);
+    font-weight: bold;
+}
+
+.section-resumen__formulario{
+    padding: 50px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: 10px;
+    width: 23%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+.form__label{
+    display: flex;
+    margin: 10px 0 5px 5px;
+}
+.form__input{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-input);
+    border-radius: 5px;
+}
+.form__submit{
+    background-color: var(--boton);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+    &:hover{
+        background-color: var(--title-color);
+        border-radius: 8px;
+    }
+}
+
+.section-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-gray);
+}
+
+.contenido_np{
+    width: 65%;
+}
+
+.article{
+    padding: 50px;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px dashed var(--black);
+}
+.article__header{
+    display: flex;
+}
+.article__title{
+    margin-left: 20px;
+}
+.article__icono{
+    width: 60px;
+}
+
+p{
+    text-align: justify;
+}
+
+.article__redes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.article_icono{
+    width: 60px;
+}
+
+.conocenos{
+    width: 65%;
+}
+
+aside{
+    position: fixed;
+    top:400px;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--aside-background);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.79em;
+    border: solid 1px var(--black);
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes giros{
+    0%, 100%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+}
+
+@media (max-width: 1420px){
+    .logo-titulo__titulo{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    aside{
+        width: 70px;
+        font-size: 0.7em;
+        padding: 1;
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+    .section-resumen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background);
+    }
+    .section-resumen__resumen{
+        width: 70%;
+        justify-items: left;
+    }
+    .section-resumen__formulario{
+        width: 60%;
+        justify-items: left;
+    }
+
+    .contenido_np{
+        width: 90%;
+    }
+    
+    .conocenos{
+        width: 90%;
+    }
+    .article_icono{
+        width: 40%;
+    }
+    .section-video__frame {
+        width: 90%;
+        border-radius: 12px;
+        border: solid 1px;
+    }   
+    .section-video__video{
+        margin-top: -40px;
+        opacity: 0.9;
+        width: 100%;
+    }
+    #centrado{
+        align-items: center;
+    }
+    .porcentaje-meta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calendario-inversionistas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #calendario{
+        margin: 0;
+        padding: 0;
+    }
+    #inver{
+        margin: 0;
+        padding: 0;
+    }
+    .toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__list{
+        display: none;
+        position: absolute;
+        align-items: end;
+        right: 0;
+        margin: 0;
+    }
+    #subList{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .nav{
+        position: absolute;
+        right: 0;
+        margin: 0;
+        top: 100%;
+    }
+    .nav__list--visible{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__item{
+        width: 100%;
+        height: 50%;
+        border-radius: 3px;
+        border-bottom: 0.1px solid rgb(255, 255, 255);
+        margin: 0;
+        padding: 2px 10px 2px 15px;
+    }
+    .logo-titulo__titulo{
+        display: flex;
+        font-size: 1.3em;
+    }
+    .header{
+        height: 50px;
+    }
+}

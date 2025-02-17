@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Finanzas para Colombia!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="logo-titulo">
+            <img class="logo-titulo__img" src="imagenes/Logo.png" width="60" alt="Icono propósito"/>
+            <h1 class="logo-titulo__titulo">Mejores Finanzas Para Colombia</h1>
+        </div>
+        <div class="toggle" id="toggle">☰</div>
+        <nav class="nav">
+            <ul id="navList" class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#content">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#proposito">Propósito</a></li>
+                <li class="nav__item"><a class="nav__link" href="#confianza">Confianza</a></li>
+                <li class="nav__item"><a class="nav__link" href="#actividades">Actividades</a></li>
+                <li class="nav__item"><a class="nav__link" href="#riesgos">Riesgos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#impacto">Impacto</a></li>
+                <ul id="subList" class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#social">Social</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#financiero">Financiero</a></li>
+                </ul>
+                <li class="nav__item"><a class="nav__link" href="#perfil">Perfil</a></li>
+                <li class="nav__item"><a class="nav__link" href="#redes">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content" class="main">
+        <section class="section-video">
+            <div id="centrado">
+                <div class="section-video__frame">
+                    <video class="section-video__video"  controls width="1024" loop>
+                        <source src="videos/Startup.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="form-inversion" class="section-resumen">
+            <div class="section-resumen__resumen cifras">
+                <h2 class="cifras__titulo">Resumen:</h2>
+                <p class="cifras__monto-titulo">Monto recaudado</p>
+                <p class="cifras__monto-valor">COP $9'000.000</p>
+                <div class="cifras__avance porcentaje-meta">
+                    <p class="porcentaje-meta__titulo">% Recaudado:</p>
+                    <p class="porcentaje-meta__porcentaje">30%</p>
+                    <p class="porcentaje-meta__monto-tit">Monto meta:</p>
+                    <p class="porcentaje-meta__monto-valor">COP $30'000.000</p>
+                </div>
+                <div class="calendario-inversionistas">
+                    <img src="imagenes/calendario.png" width="30" alt="Icono calendario"/>
+                    <p id="calendario"><span id="dias">58</span> Días para finalizar</p>
+                    <img src="imagenes/inversionistas.png" width="30" alt="Icono inversionistas"/>
+                    <p id="inver"><span id="inversionistas">12</span> Inversionistas</p>
+                </div>
+            </div>
+            <div class="section-resumen__formulario">
+                <form class="form" action="javascript:void(0)" method="post">
+                    <fieldset>
+                        <legend>¿Cuanto deseas invertir?</legend>
+                        <label class="form__label" for="moneda">Tipo Moneda:</label>
+                        <input class="form__input" list="monedas" name="moneda" id="moneda" placeholder="Seleccione Moneda"/>
+                        <datalist id="monedas">
+                            <option value="Seleccione moneda..."></option>
+                        </datalist>
+                        <label class="form__label" for="monto">Monto:</label>
+                        <input class="form__input" type="number" name="monto" id="monto" placeholder="$"/>
+                        <p><small>Monto mínimo: $500.000</small></p>
+                        <input class="form__submit" type="submit" value="Invertir"/>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section id="descripcion" class="section-descripcion">
+            <div class="contenido_np">
+                <h3>Nuestro proyecto</h3>
+                <article class="article" id="proposito">
+                    <header class="article__header">
+                        <img class="article__icono" src="imagenes/proposito.png" alt="Icono propósito"/>
+                        <h3 class="article__title">Propósito</h3>
+                    </header>
+                    <p>Nuestro objetivo es continuar creciendo y ofrecer segundas oportunidades a nuestros clientes. Estamos convencidos de que todos los colombianos tienen derecho a saldar sus deudas pendientes y adoptar nuevos hábitos financieros. Estamos buscando una inversión de dos mil quinientos millones de pesos (COP $2.500 millones) para poder asesorar a más de 20.000 clientes y generar ingresos superiores a los 61.000 millones de pesos en 2025. Planeamos destinar estos recursos a fortalecer nuestros canales digitales de adquisición y ampliar nuestras oficinas, con el fin de modernizar nuestra infraestructura e incorporar tecnologías de vanguardia</p>
+                    <p>Además de optimizar nuestras operaciones, la campaña tiene como objetivo generar beneficios concretos tanto para nuestros clientes como para la comunidad en general. La inversión en adquisición digital nos ayudará a llegar a más colombianos y dar a conocer nuestros servicios, mientras que la remodelación nos permitirá ofrecer soluciones de reparación de crédito más accesibles y personalizadas. De esta manera, la campaña busca transformar nuestra empresa, consolidando nuestra posición única y fortaleciendo nuestro compromiso con la excelencia y el impacto positivo en la comunidad financiera de Colombia.</p>
+                </article>
+                <article class="article" id="confianza">
+                    <header class="article__header">
+                        <img class="article__icono" src="imagenes/confianza.png" alt="Icono confianza"/>
+                        <h3 class="article__title">Confianza</h3>
+                    </header>
+                    <p>Nuestra presencia internacional en países como México, Colombia, España, Italia, Portugal y Brasil nos proporciona un sólido respaldo financiero y organizativo para alcanzar todos nuestros objetivos. Esto genera confianza en quienes nos consideran como una opción para invertir. Además, nuestro equipo ha demostrado ser capaz de superar los diversos desafíos que ha enfrentado.</p>
+                    <p>Somos líderes en un sector en constante expansión. Contamos con más de catorce años de experiencia, lo que nos proporciona una base sólida para garantizar que cada proyecto y objetivo se materialice, gracias al esfuerzo constante y la calidad, que son dos de los valores fundamentales que nos definen como empresa.</p>
+                </article>
+                <article class="article" id="actividades">
+                    <header class="article__header">
+                        <img class="article__icono" src="imagenes/actividades.png" alt="Icono actividades"/>
+                        <h3 class="article__title">Actividades</h3>
+                    </header>
+                    <p>En el área de marketing, destinaremos 1.500 millones de pesos para captar más de 150,000 leads en el último trimestre del año, alcanzando así nuestras metas. Implementaremos tácticas de segmentación y personalización basadas en datos demográficos y preferencias, enfocando nuestras campañas en audiencias específicas. Elegiremos las plataformas publicitarias más efectivas, según los resultados de conversión, para optimizar el uso del presupuesto. Mantendremos una presencia activa en redes sociales con contenido de interés y utilizaremos herramientas de análisis para ajustar las estrategias en tiempo real. Además, estableceremos un sistema robusto de seguimiento de conversiones para evaluar el éxito de las campañas.</p>
+                    <p>En cuanto a la remodelación de oficinas, se requieren 1.000 millones de pesos para ampliar y actualizar tecnológicamente nuestras instalaciones. Contaremos con arquitectos y diseñadores para crear un proyecto alineado con nuestra cultura organizacional. Con la colaboración de proveedores confiables, definiremos un cronograma y presupuesto eficientes. Obtendremos los permisos necesarios y supervisaremos la calidad de los materiales. La remodelación se llevará a cabo conforme a un plan detallado, asegurando el cumplimiento de los estándares establecidos. La instalación de mobiliario y tecnología se controlará para garantizar el mejor rendimiento. Al finalizar, resaltaremos los beneficios en términos de eficiencia operativa y comodidad al inaugurar las nuevas oficinas.</p>
+                </article>
+                <article class="article" id="riesgos">
+                    <header class="article__header">
+                        <img class="article__icono" src="imagenes/riesgos.png" alt="Icono riesgos"/>
+                        <h3 class="article__title">Riesgos</h3>
+                    </header>
+                    <p>Nuestra estrategia global para el desarrollo del proyecto de remodelación se enfoca en reducir al máximo los riesgos identificados. Para prevenir posibles retrasos en la obtención de permisos, adoptamos un enfoque anticipado que comienza los trámites con antelación, mantiene una comunicación fluida con las autoridades y define un plan de contingencia para hacer frente a cualquier demora que pueda surgir.</p>
+                    <p>Para enfrentar los desafíos técnicos y de calidad, hemos establecido estrategias sólidas que prácticamente eliminan este riesgo. Llevamos a cabo pruebas previas, contamos con un equipo técnico altamente capacitado y seguimos estrictos estándares de calidad, realizando inspecciones periódicas para asegurar la excelencia en cada etapa del proyecto. Además, para prevenir la escasez de recursos, hemos identificado fuentes alternativas, cultivado relaciones estrechas con proveedores y contratistas, y anticipado posibles limitaciones, lo que garantiza una ejecución eficiente y exitosa del proyecto de remodelación.</p>
+                </article>
+                <h3 id="impacto">Impacto</h3>
+                <div class="sub_item">
+                    <article class="article" id="social">
+                        <header class="article__header">
+                            <img class="article__icono" src="imagenes/social.png" alt="Icono social"/>
+                            <h3 class="article__title">Social</h3>
+                        </header>
+                        <p>La campaña tiene como objetivo ofrecer beneficios concretos tanto para nuestros clientes como para la comunidad en general, al mejorar la experiencia del cliente y fortalecer los lazos con la comunidad financiera. Mediante una inversión en adquisición digital, podremos llegar a más de 20,000 colombianos para informarles sobre lo que hacemos y cómo podemos ayudarles a mejorar su situación financiera. Al mismo tiempo, la remodelación de oficinas creará un ambiente de trabajo más atractivo y cómodo, lo que aumentará la satisfacción y productividad de nuestros empleados. Esto no solo atraerá nuevo talento al ofrecer espacios modernos, sino que también proporcionará un entorno más acogedor para clientes y colaboradores, mejorando la atención al cliente y fomentando una relación más cercana y efectiva con la comunidad. En conjunto, estas iniciativas refuerzan nuestra posición como la principal reparadora de crédito consolidada en Colombia, comprometida con la excelencia y la profesionalidad.</p>
+                    </article>
+                    <article class="article" id="financiero">
+                        <header class="article__header">
+                            <img class="article__icono" src="imagenes/financiero.png" alt="Icono financiero"/>
+                            <h3 class="article__title">Financiero</h3>
+                        </header>
+                        <p>La estrategia tiene como objetivo generar más de 61,000 millones en ingresos durante 2025, lo que refleja un impacto financiero positivo y significativo. Este crecimiento se alcanzará mediante la expansión de nuestra base de clientes y un aumento en la productividad, impulsado por la modernización de nuestras oficinas y la optimización de los canales digitales de adquisición. Con una infraestructura mejorada y el uso de tecnologías avanzadas, lograremos operar de manera más eficiente, reduciendo costos operativos. Esto permitirá gestionar los recursos de forma más efectiva y aumentar la rentabilidad, asegurando un crecimiento sostenible que consolidará nuestra posición de liderazgo en el mercado de reparación de crédito en Colombia.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="conocenos">
+                <h3>Conócenos</h3>
+                <div class="contenido_c">
+                    <article class="article" id="perfil">
+                        <header class="article__header">
+                            <img class="article__icono" src="imagenes/perfil.png" alt="Icono perfil"/>
+                            <h3 class="article__title">Perfil</h3>
+                        </header>
+                        <p>Nuestra empresa fue fundada en 2012 en México por Juan Velez y Jean Llera, quienes se graduaron de Stanford en medio de la crisis económica. Motivados por esta situación y tras conocer el modelo de reparación de crédito en Estados Unidos, decidieron implementarlo en su país natal. En nuestra compañía, buscamos fomentar el hábito del ahorro para ayudar a las personas que desean pagar sus deudas, pero no pueden, a liquidarlas completamente con las entidades bancarias. En 2018, llegamos a Colombia, y a partir de ahí comenzamos una expansión internacional que nos llevó a Brasil y a varios países europeos, incluyendo España, Italia y Portugal.</p>
+                    </article>
+                    <article class="article" id="redes">
+                        <header class="article__header">
+                            <img class="article__icono" src="imagenes/redes.png" alt="Icono redes"/>
+                            <h3 class="article__title">Redes sociales</h3>
+                        </header>
+                        <div>
+                            <figure class="article__redes">
+                                <a href="javascript:void(0)"><img class="article_icono" src="imagenes/r_facebook.png" alt="Icono facebook"/></a>
+                                <a href="javascript:void(0)"><img class="article_icono" src="imagenes/r_instagram.png" alt="Icono instagram"/></a>
+                                <a href="javascript:void(0)"><img class="article_icono" src="imagenes/r_whatsapp.png" alt="Icono whatsapp"/></a>
+                                <a href="javascript:void(0)"><img class="article_icono" src="imagenes/r_x.png" alt="Icono x"/></a>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h4>Recaudos recientes:</h4>
+            <ul>
+                <li>$2'500.000 (25/01/2025)</li>
+                <li>$1'000.000 (25/01/2025)</li>
+                <li>$2'300.000 (25/01/2025)</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; Finanzas Colombia</p>
+        <address>
+            Contacto: <a href="mailto:info@finanzascolombia.co">info@finanzascolombia.co</a>
+        </address>
+    </footer>
+</body>
+<script>
+    const toggle = document.getElementById('toggle');
+    const navList = document.getElementById('navList');
+    toggle.addEventListener('click', ()=>{
+        navList.classList.toggle("nav__list--visible")
+    })
+</script>
+</html>
